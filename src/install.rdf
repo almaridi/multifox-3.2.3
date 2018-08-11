@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description about="urn:mozilla:install-manifest">
+
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:id>${EXT_ID}</em:id>
+    <em:version>${EXT_VERSION}</em:version>
+    <em:homepageURL>${EXT_SITE}</em:homepageURL>
+    <em:name>${EXT_NAME}</em:name>
+    <em:creator>Jeferson Hultmann</em:creator>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <RDF:Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>${APP_MIN_VERSION}</em:minVersion>
+        <em:maxVersion>${APP_MAX_VERSION}</em:maxVersion>
+      </RDF:Description>
+    </em:targetApplication>
+
+${UPDATE_DATA}
+  </RDF:Description>
+</RDF:RDF>

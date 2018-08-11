@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+-->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="${PATH_CONTENT}/favicon.ico">
+    <title>${EXT_NAME}</title>
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+        margin: 3em 8em;
+      }
+      h2 {
+        font-size: 140%;
+        margin: 2em 0 0 0;
+      }
+      h1 + h2:first-of-type {
+        margin-top: 0em;
+      }
+      p {
+        margin: 4px 0;
+      }
+      img {
+        border-style: none;
+      }
+      #l10n-notfound-p {
+        font-style: italic;
+      }
+    </style>
+    <script type="text/javascript" src="${PATH_CONTENT}/about-multifox.js"></script>
+  </head>
+  <body>
+    <h1><a href="${EXT_SITE}"><img width="250" height="155" src="${PATH_CONTENT}/logo-about.png" alt="${EXT_NAME}"></a></h1>
+    <h2><a href="${EXT_SITE}">${EXT_NAME} ${EXT_VERSION}</a></h2>
+    <p id="desc"></p>
+
+    <h2 id="author-h"></h2>
+    <p id="author-p"></p>
+
+    <h2 id="l10n-h"></h2>
+    <p id="l10n-p"></p>
+
+    <h2 id="source-h"></h2>
+    <p id="source-p"></p>
+
+    <h2 id="legal-h"></h2>
+    <p id="legal-p"></p>
+  </body>
+</html>
